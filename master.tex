@@ -1,6 +1,27 @@
 % !TeX root = main.tex
 \documentclass[11pt,a4paper]{report}
 \input{preamble.tex}
-\begin{document}
+\author{Mikkel Helsing Andersen}
+\title{Design \& Evaluation of User Interfaces - notes}
 
+\begin{document}
+    %%%%%%%%%%%%%%%%%%%%
+    %  Document setup
+    %%%%%%%%%%%%%%%%%%%%
+    \pagestyle{fancy}
+    \maketitle
+    \tableofcontents\label{toc}
+    \fancyhead{} % resets header
+    \fancyhead[L]{DEB notes}
+    \fancyhead[C]{\textbf{Mikkel Helsing Andersen}}
+    \fancyhead[R]{AAU - DAT 3}
+    \fancyfoot{} % resets footer
+    \fancyfoot[L]{\hyperref[toc]{Table of Contents}}
+    \fancyfoot[R]{\thepage}
+
+    %%%%%%%%%%%%%%%%%%%%
+    %     Content
+    %%%%%%%%%%%%%%%%%%%%
+    \input{chapters/requirement_analysis/page.tex}
+    \input{chapters/data_collection/page.tex}
 \end{document}
