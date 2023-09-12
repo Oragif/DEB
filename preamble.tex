@@ -26,3 +26,17 @@
 \def \ooad[#1]{
     {\tiny \textbf{(DUE P. #1)}}
 }
+
+\usepackage[most]{tcolorbox}
+\newtcbtheorem[number within=subsection]{exercise}{Exercise}%
+{ % frame stuff
+    enhanced,frame empty,interior empty,
+    colframe=black,
+    borderline west={1pt}{0pt}{green!25!black},
+    left=0.2cm,
+    % title stuff
+    attach boxed title to top left={yshift=-2mm,xshift=-2mm},
+    coltitle=black,
+    fonttitle=\bfseries,
+    colbacktitle=white,
+    boxed title style={boxrule=.4pt,sharp corners}}{exercise}

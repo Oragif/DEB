@@ -1,0 +1,158 @@
+\section{Lecture 2 exercise}
+\subsection{Requirements}
+In reference to: \href{chp:requirement_analysis}{Requirement analysis}
+\begin{exercise}{\parbox{\linewidth*3/4}{What types of requirements exist?}}{ex:lec_2_req_1}
+    Functional requirement, what the system must do.\\
+    Non-functional requirement, qualities that the system must have. Characteristics and/or parameters. Think qualitative.
+\end{exercise}
+
+\begin{exercise}{\parbox{\linewidth*3/4}{What characterizes the different types of requirements?}}{ex:lec_2_req_2}
+    Functional requirement, what the system must do.\\
+    Non-functional requirement, qualities that the system must have. Characteristics and/or parameters. Think qualitative.
+\end{exercise}
+
+\begin{exercise}{\parbox{\linewidth*3/4}{How can requirements be represented in a requirements specification? (would you use a table and what would that look like?)}}{ex:lec_2_req_3}
+    Yoinked from video, but describes the table:
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics*[width=\linewidth*3/4]{chapters/requirement_analysis/figures/requirement_table.png}        
+        \end{center}
+        \caption{Requirements table}
+        \label{fig:requirement_table}
+    \end{figure}
+\end{exercise}
+\begin{exercise}{\parbox{\linewidth*3/4}{What characterizes a "good" requirement? How should a good requirement be phrased?}}{ex:lec_2_req_4}
+    A good requirement needs to be testable. Ambiguity should be avoided, while keeping it simple to understand and short in length. It should be something a product must do or a quality it must have.
+\end{exercise}
+\begin{exercise}{\parbox{\linewidth*3/4}{How can requirements be prioritized?}}{ex:lec_2_req_5}
+    {\large \textbf{MoSCoW model:}}
+    \begin{table}[H]
+    \newcommand{\centcross}{\multicolumn{1}{c|}{\textbf{x}}}
+    \makeatletter
+    \newcommand{\otherlabel}[2]{\protected@edef\@currentlabel{#2}\label{#1}}
+    \makeatother
+    \begin{tabular}{|l|l|l|l|l|l|}
+    \hline
+    ID                        & Requirement      & Must have  & Should have & Could have & Won't have \\ \hline
+    1\otherlabel{req_id_1}{1} & Simple login     & \centcross &             &            &            \\ \hline
+    2\otherlabel{req_id_2}{2} & Time-registering & \centcross &             &            &            \\ \hline
+    3\otherlabel{req_id_3}{3} & Time approval    & \centcross &             &            &            \\ \hline
+    4\otherlabel{req_id_4}{4} & Export to CSV    & \centcross &             &            &            \\ \hline
+    5\otherlabel{req_id_5}{5} & Project creation &            & \centcross  &            &            \\ \hline
+    6\otherlabel{req_id_6}{6} & Role system      &            & \centcross  &            &            \\ \hline
+    7\otherlabel{req_id_7}{7} & Filtered CSV     &            &             & \centcross &            \\ \hline
+    8\otherlabel{req_id_8}{8} & Auto holiday     &            &             & \centcross &            \\ \hline
+    9\otherlabel{req_id_9}{9} & Calculate salary     &            &             &  & \centcross         \\ \hline
+    \end{tabular}
+    \end{table}
+\end{exercise}
+\begin{exercise}{\parbox{\linewidth*3/4}{Who decides which priority to give the requirements? And how is this decided?}}{ex:lec_2_req_6}
+    Requirements should be prioritized by reviewing them with customer/clients, this should also take the availible resources into consideration, as no project has an umlimited budget.
+\end{exercise}
+\subsection{Data collection}
+In reference to: \href{chp:data_collection}{Data collection methods}
+\begin{exercise}{\parbox{\linewidth*3/4}{Which of the following are considered qualitative data collection methods? Why?}}{ex:lec_2_data_1}
+    \begin{itemize}
+        \item Interviews \checkmark
+        \item Questionnaires 
+        \item Cultural probes \checkmark
+        \item Observation \checkmark
+    \end{itemize}
+    Qualitative data collection is by definition non-numerical, so it cannot be ranked and easily compared. It focuses more on experience and opinions. 
+\end{exercise}
+
+\begin{exercise}{\parbox{\linewidth*3/4}{Which of the following are considered quantitative data collection methods? Why?}}{ex:lec_2_data_2}
+    \begin{itemize}
+        \item Interviews
+        \item Questionnaires \checkmark
+        \item Cultural probes 
+        \item Observation 
+    \end{itemize}
+    Quantative data should be expressed as a quantity, there by making it easily comparable. Questionnaires are the only real quantative data collection of the 4, as it's unambigous and easy to analyze. 
+\end{exercise}
+
+\begin{exercise}{\parbox{\linewidth*3/4}{Which of the following can be considered both quantitative and qualitative data collection methods? Why?}}{ex:lec_2_data_3}
+    \begin{itemize}
+        \item Interviews \checkmark
+        \item Questionnaires 
+        \item Cultural probes 
+        \item Observation \checkmark
+    \end{itemize}
+    Observations could potentially be quantative depending on the data that is selected to be collected, but most likely qualitative. Structured interviews can be quantative, due too their rigidety in possible answers.
+\end{exercise}
+
+\begin{exercise}{\parbox{\linewidth*3/4}{What would be the best data collection method for gathering data in this situation: Your informants are part of a different community than your own. You want to get an understanding of their everyday lives and habits in using technologies at home. Which method of data collection techniques would be most suitable?}}{ex:lec_2_data_4}
+    \begin{itemize}
+        \item Interviews 
+        \item Questionnaires 
+        \item Cultural probes \checkmark
+        \item Observation 
+    \end{itemize}
+    Cultural probing lends itself very much to this type of data collection, as it's specifically made to understanding peoples lifes in a normal setting such as their home.
+\end{exercise}
+
+\begin{exercise}{\parbox{\linewidth*3/4}{How many forms of interviews are there and how would you describe these?}}{ex:lec_2_data_5}
+    \begin{itemize}
+        \item Structered interview, with predetermined order and questions.
+        \item Semi-structured, loose understanding of questions, but more so following the flow of conversations.
+        \item Unstructured, loose understanding of questions, but more focused understanding general concerns of customer.
+    \end{itemize}
+\end{exercise}
+
+\begin{exercise}{\parbox{\linewidth*3/4}{What are the benefits and drawbacks of the different interview forms?}}{ex:lec_2_data_6}
+    \begin{description}
+        \item[Structered] Quantifiable, but limits to more restricted answers.
+        \item[Semi-structured] Allows to explore new appropriate topics, while still keeping the general conversations structured and to the point.
+        \item[Unstructured] Avoids preconceptions, but interviewer has very limited knowledge, meaning keeping the interview on track can be harder.
+    \end{description}
+\end{exercise}
+
+\begin{exercise}{\parbox{\linewidth*3/4}{What are some considerations you should take into account in terms of the language of interview questions, i.e. formulating questions?}}{ex:lec_2_data_7}
+    It should be a mixture of open and closed questions.\\
+    Closed questions to create a baseline and general understanding.\\
+    Open questions, so the interviewee can share their experience, knowledge etc. in detail. 
+\end{exercise}
+
+\begin{exercise}{\parbox{\linewidth*3/4}{What are some benefits of observations compared to interviews?}}{ex:lec_2_data_8}
+    In interviews certain information and commonalities can easily be forgotten when explaining. By using observations this will be captured. It will also show the actual working enviroment and frustations points in reality.
+\end{exercise}
+
+\begin{exercise}{\parbox{\linewidth*3/4}{In which situations would it be most suitable to use questionnaires over interviews? }}{ex:lec_2_data_9}
+    Allows collection from a distance, and with larger amount of participants. It's not as specific as an interview, but will allow to get a more general understanding, as it can be quantified.
+\end{exercise}
+\clearpage
+\subsection{Data Collection - Case 1: Data gathering in a hospital ward}
+Imagine the following use context for a software system: Nurses and doctors work together in a hospital ward where children with serious illnesses (e.g. acute respiratory symptoms) are being treated. The ward is filled with technical equipment. The children come in with their parents, and the staff need to both treat the childrens’ health conditions and consult and update their systems with information while also calming the children and informing their parents about the procedures.
+\\\\
+You need to design a mobile app which shows a dashboard overview of data from various sensors (such as an electrocardiogram for monitoring heart rate). This is used to monitor the health of the children and warn staff about a change in physical conditions of the children in this use context. 
+
+\begin{enumerate}
+    \item \textbf{Conduct a PACT-analysis of this scenario.}
+    \begin{description}
+        \item[People] The main actors would be the staff, that being the nurses and doctors in the hospital. As the staff is very busy, the dashboard needs to easily accesiable and should allow quicky understand the informatiom about each patient. Furthermore should probably include a notification system, to minimize the amount of time spent looking the app.
+        \item[Activities] The activity is to allow staff to see a complete overview of all sensor data for specific patients in a dashboard.
+        \item[Contexts] Inside a medical ward, that houses seriously ill children. Its need to consider collaboration between staff within the ward. It's primary objective is collection of medical data.
+        \item[Technologies] It needs to be a mobile app, that limits need for a lot of interaction. Include a notification system for the previous point. A central database so all members can have access to multiple patients.
+    \end{description}
+    \item \textbf{Which of the following data collection techniques would you find suitable for gaining an understanding of the use context? }
+    \begin{description}
+        \item[In situ observations] to see how the staff works, and what conditions the app is used in. 
+        \item[Artefact collection] Equipment in the current work enviroment works and the their interfaces, to tailor the solution to.
+        \item[Interviews] with the staff to understand the importance of different types of information displayed, their technological expertise. General understanding of their workflow.
+        \item[Usability evaluation] to ensure its easability in use, and a satisfactory display of information. 
+    \end{description}
+    \item \textbf{Why did you choose these data collection techniques? (strengths/weaknesses?)}\\
+    Explaination is in the above answer.
+    \item \textbf{Who would you include in the data collection and in what activities?}\\
+    Explaination is in the above answer.
+    \item \textbf{Are there any of the techniques that you would not use in this context and why not?}\\
+    Cultural probes would not be neccessary, as it could really give an understanding of peoples technological abilities in this context. It's more important to make use of usability testing in this case, and tailor it to the actual users.
+    \item \textbf{If you choose to conduct observations, which ethical issues would you consider in this specific situation?}\\
+    GDPR issue first of all, as medical information is very sensitive. Also not to disturb parents and children currently within the ward. Distraction of doctors
+    \item \textbf{If you choose to conduct artefact collection, which ethical issues would you consider in this specific situation?}\\
+    See above questions $^\wedge$.
+    \item \textbf{If you choose to interview a doctor, what practical considerations would you take into account?}\\
+    Focus on the context of their work, their technical abilities and the importance of certain information. Also not to go deep into the actual medical detail, as the important part is input data and the display of said data.
+    \item \textbf{If you choose to interview a child, what practical considerations would you take into account? }\\
+    I didn't, as this app is not made for the children.
+\end{enumerate}
